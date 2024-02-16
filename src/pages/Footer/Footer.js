@@ -10,8 +10,7 @@ export default function Footer() {
           </div>
           <div className="px-3">
             <h5 className="font-bold">Backsound By</h5>
-            <a href="#" className="text-gray-400 hover:text-white">Terms</a>
-            <a href="#" className="text-gray-400 hover:text-white">Privacy</a>
+            <a href="#" className="text-gray-400 hover:text-white">Budi Doremi - Melukis Senja</a>
           </div>
         </div>
 
