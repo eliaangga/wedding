@@ -26,6 +26,7 @@ function App() {
 
   useEffect(() => {
     setIsPlaying(true);
+    document.title = "PANJI & SILVIA | WEDDING INVITATION";
   }, []);
 
   return (
