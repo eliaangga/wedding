@@ -31,7 +31,7 @@ function OpeningButton() {
       style={{
         backgroundImage: `url(${FotoSide})`,
         backgroundSize: 'cover',
-        backgroundPosition: 'center', // Center the background image
+        backgroundPosition: 'center', 
         backgroundRepeat: 'no-repeat',
       }}
     >
@@ -71,7 +71,6 @@ function Body() {
   // Komponen isi undangan
   return (
     <div id="bodySection" className="mt-10">
-      {/* ... content of the Body component ... */}
     </div>
   );
 }

@@ -3,7 +3,7 @@ import './style.css';
 import ReactPlayer from 'react-player';
 import OpeningButton from "./pages/OpeningAwal/OpeningButton";  
 
-// Body 
+
 import KutipanAyatdanQuotes from './pages/Body/KutipanAyatdanQuotes';  
 import Mempelai from './pages/Body/Mempelai';  
 import HighlightFoto from './pages/Body/HighlightFoto';  
@@ -13,18 +13,17 @@ import Transfer from './pages/Body/Transfer';
 import RSVP from './pages/Body/RSVP';
 import Footer from './pages/Footer/Footer';
 
-// Register waveform
+
 import { waveform } from 'ldrs';
 waveform.register();
 
 function App() {
-  const [isPlaying, setIsPlaying] = useState(false); // Default value is false
+  const [isPlaying, setIsPlaying] = useState(false); 
 
   const togglePlay = () => {
-    setIsPlaying(!isPlaying); // Toggle the playing state
+    setIsPlaying(!isPlaying); 
   };
 
-  // Start the song when the component mounts
   useEffect(() => {
     setIsPlaying(true);
   }, []);
@@ -42,7 +41,6 @@ function App() {
 
       <OpeningButton />
 
-      {/* Render the body components */}
       <KutipanAyatdanQuotes />
       <Mempelai />
       <HighlightFoto />   
@@ -52,7 +50,6 @@ function App() {
       <UcapandanDoa />
       <Footer />
 
-      {/* Render the play/pause button */}
       <div className="fixed bottom-8 right-8 z-10">
         <button className="focus:outline-none" onClick={togglePlay}>
           <div className={`w-10 h-10 rounded-full bg-black flex items-center justify-center border-2 border-solid border-white ${isPlaying ? 'bg-red-500' : 'bg-black'}`}>
