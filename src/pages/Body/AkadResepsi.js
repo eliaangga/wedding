@@ -67,7 +67,7 @@ function AkadResepsi() {
 
         <div className="bg-white-500 text-gray-500 rounded-lg p-4 mb-8 shadow border border-solid border-gray-500 hover:bg-[#20669B] hover:text-white transform transition-transform duration-500 hover:scale-105">
           <h3 className="text-2xl capitalize mb-2">Paroki St. Mikael Cilegon</h3> 
-          <p>Jl. Ahmad Yani No.55, Pagebangan, Sukmajaya, Kec. Jombang, Kota Cilegon, Banten 42416</p>
+          <p>Jl. Ahmad Yani No.55, Sukmajaya, Kec. Jombang, Kota Cilegon, Banten 42416</p>
         </div>
 
         <a 

@@ -9,6 +9,9 @@ import foto4 from '../../img/foto4.jpg';
 import foto5 from '../../img/foto5.jpg';
 import foto6 from '../../img/foto6.jpeg';
 import foto7 from '../../img/foto7.jpeg';
+import foto8 from '../../img/foto8.jpg';
+import foto9 from '../../img/foto9.jpg';
+import foto10 from '../../img/foto10.jpg';
 import FotoBackground from '../../img/backgorund/FotoBackground.png';
 
 function Photo({ src, setShowModal }) {
@@ -89,6 +92,15 @@ function HighlightFoto() {
           </div>
           <div>
             <Photo src={foto7} setShowModal={() => { setSelectedPhoto(foto4); setShowModal(true); }} />
+          </div>
+          <div>
+            <Photo src={foto8} setShowModal={() => { setSelectedPhoto(foto4); setShowModal(true); }} />
+          </div>
+          <div>
+            <Photo src={foto9} setShowModal={() => { setSelectedPhoto(foto4); setShowModal(true); }} />
+          </div>
+          <div>
+            <Photo src={foto10} setShowModal={() => { setSelectedPhoto(foto4); setShowModal(true); }} />
           </div>
         </Slider>
       </div>
