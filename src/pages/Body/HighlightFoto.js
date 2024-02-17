@@ -16,7 +16,7 @@ import FotoBackground from '../../img/backgorund/FotoBackground.png';
 
 function Photo({ src, setShowModal }) {
   return (
-    <div className="flex items-center justify-center w-full h-full">
+    <div className="h-full flex items-center justify-center">
       <img
         src={src}
         alt="gambar aja"
@@ -64,13 +64,15 @@ function HighlightFoto() {
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
+    autoplay: true, 
+    autoplaySpeed: 1500, 
     nextArrow: <NextArrow />,
     prevArrow: <PrevArrow />
   };
 
   return (
     <div className="bg-gray-900 min-h-screen flex flex-col items-center justify-center" style={{ backgroundImage: `url(${FotoBackground})` }}>
-      <div className="container mx-auto py-8 w-full md:w-3/4 lg:w-2/3">
+      <div className="container mx-auto py-8 w-full md:w-3/4 lg:w-2/3 relative">
         <Slider {...settings} className="w-full">
           <div>
             <Photo src={foto1} setShowModal={() => { setSelectedPhoto(foto1); setShowModal(true); }} />
@@ -85,26 +87,26 @@ function HighlightFoto() {
             <Photo src={foto4} setShowModal={() => { setSelectedPhoto(foto4); setShowModal(true); }} />
           </div>
           <div>
-            <Photo src={foto5} setShowModal={() => { setSelectedPhoto(foto4); setShowModal(true); }} />
+            <Photo src={foto5} setShowModal={() => { setSelectedPhoto(foto5); setShowModal(true); }} />
           </div>
           <div>
-            <Photo src={foto6} setShowModal={() => { setSelectedPhoto(foto4); setShowModal(true); }} />
+            <Photo src={foto6} setShowModal={() => { setSelectedPhoto(foto6); setShowModal(true); }} />
           </div>
           <div>
-            <Photo src={foto7} setShowModal={() => { setSelectedPhoto(foto4); setShowModal(true); }} />
+            <Photo src={foto7} setShowModal={() => { setSelectedPhoto(foto7); setShowModal(true); }} />
           </div>
           <div>
-            <Photo src={foto8} setShowModal={() => { setSelectedPhoto(foto4); setShowModal(true); }} />
+            <Photo src={foto8} setShowModal={() => { setSelectedPhoto(foto8); setShowModal(true); }} />
           </div>
           <div>
-            <Photo src={foto9} setShowModal={() => { setSelectedPhoto(foto4); setShowModal(true); }} />
+            <Photo src={foto9} setShowModal={() => { setSelectedPhoto(foto9); setShowModal(true); }} />
           </div>
           <div>
-            <Photo src={foto10} setShowModal={() => { setSelectedPhoto(foto4); setShowModal(true); }} />
+            <Photo src={foto10} setShowModal={() => { setSelectedPhoto(foto10); setShowModal(true); }} />
           </div>
         </Slider>
+        {showModal && <Modal src={selectedPhoto} setShowModal={setShowModal} />}
       </div>
-      {showModal && <Modal src={selectedPhoto} setShowModal={setShowModal} />}
     </div>
   );
 }

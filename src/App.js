@@ -1,8 +1,7 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import './style.css';
 import ReactPlayer from 'react-player';
 import OpeningButton from "./pages/OpeningAwal/OpeningButton";  
-
 
 import KutipanAyatdanQuotes from './pages/Body/KutipanAyatdanQuotes';  
 import Mempelai from './pages/Body/Mempelai';  
@@ -12,7 +11,6 @@ import UcapandanDoa from './pages/Body/UcapandanDoa';
 import Transfer from './pages/Body/Transfer';
 import RSVP from './pages/Body/RSVP';
 import Footer from './pages/Footer/Footer';
-
 
 import { waveform } from 'ldrs';
 waveform.register();
@@ -24,10 +22,9 @@ function App() {
     setIsPlaying(!isPlaying); 
   };
 
-  useEffect(() => {
-    setIsPlaying(true);
-    document.title = "PANJI & SILVIA | WEDDING INVITATION";
-  }, []);
+  const handleOpeningButtonClick = () => {
+    setIsPlaying(true); // Memulai lagu ketika tombol "Buka Undangan" ditekan
+  };
 
   return (
     <div className="overflow-x-auto">
@@ -40,7 +37,7 @@ function App() {
         style={{ display: 'none' }}
       />
 
-      <OpeningButton />
+      <OpeningButton onButtonClick={handleOpeningButtonClick} />
 
       <KutipanAyatdanQuotes />
       <Mempelai />
@@ -69,5 +66,3 @@ function App() {
 }
 
 export default App;
-
-

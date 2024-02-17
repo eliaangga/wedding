@@ -4,12 +4,12 @@ import { mailOutline } from 'ionicons/icons';
 import './OpeningButton.css';
 import FotoSide from '../../img/backgorund/FotoSide.png';
 
-function OpeningButton() {
+function OpeningButton({ onButtonClick }) {
   const [isOpened, setIsOpened] = useState(false);
 
   const handleClick = () => {
     setIsOpened(true);
-
+    onButtonClick(); // Memberi sinyal ke parent component bahwa tombol telah ditekan
     // Auto-scroll to the next section
     try {
       const bodyElement = document.getElementById('bodySection');
