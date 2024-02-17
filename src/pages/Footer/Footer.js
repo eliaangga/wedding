@@ -6,11 +6,11 @@ export default function Footer() {
         <div className="flex flex-col md:flex-row text-center md:text-left">
           <div className="px-3">
             <h5 className="font-bold">Made With By</h5>
-            <a href="#" className="text-gray-400 hover:text-white">@eliaanggaa</a>
+            <a className="text-gray-400 hover:text-white">@eliaanggaa</a>
           </div>
           <div className="px-3">
             <h5 className="font-bold">Backsound By</h5>
-            <a href="#" className="text-gray-400 hover:text-white">Budi Doremi - Melukis Senja</a>
+            <a className="text-gray-400 hover:text-white">Budi Doremi - Melukis Senja</a>
           </div>
         </div>
 
