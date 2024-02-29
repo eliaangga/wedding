@@ -128,7 +128,7 @@ function AkadResepsi() {
 
           <div className="bg-white-500 text-white rounded-lg p-4 mb-8 shadow border border-solid border-gray-500 hover:bg-black hover:text-white transform transition-transform duration-500 hover:scale-105">
               <h2 className="text-2xl capitalize mb-2">Biaya Pendaftaran</h2>
-              <p className=" text-xl font-medium mb-1 ">UMUM Rp 200,000/Peserta</p>
+              <p className=" text-xl font-medium mb-1 ">Umum Rp 200,000/Peserta</p>
               <p className=" text-xl font-medium mb-1 ">OMK Rp 100,000/Peserta</p>
             </div>
 
