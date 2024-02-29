@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { IonIcon } from '@ionic/react';
 import { mailOutline } from 'ionicons/icons';
 import './OpeningButton.css';
-import FotoSide from '../../img/backgorund/FotoSide.png';
+import Kephalaman1 from '../../img/kephalaman1.png';
 
 function OpeningButton({ onButtonClick }) {
   const [isOpened, setIsOpened] = useState(false);
@@ -20,6 +20,16 @@ function OpeningButton({ onButtonClick }) {
       console.error('Error while scrolling:', error);
     }
   };
+  
+  const lirikLaguPujian = [
+    {
+      judul: "Wahyu 3:20 TB",
+      lirik: `Lihat, Aku berdiri di muka pintu dan mengetok; 
+      jikalau ada orang yang mendengar suara-Ku dan membukakan pintu, 
+      Aku akan masuk mendapatkannya dan Aku makan bersama-sama dengan dia, 
+      dan ia bersama-sama dengan Aku.`
+    }
+  ];
 
   return (
     <div
@@ -27,23 +37,26 @@ function OpeningButton({ onButtonClick }) {
         isOpened ? 'bg-blur' : ''
       }`}
       style={{
-        backgroundImage: `url(${FotoSide})`,
+        backgroundImage: `url(${Kephalaman1})`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundRepeat: 'no-repeat',
       }}
     >
       <div className="flex flex-col items-center justify-center h-screen">
-        <div className="text-white text-center font-myFont">
-          <p className="text-2xl font-semibold">YTH,</p>
-          <h1 className="text-2xl font-bold my-3">Bapa dan Ibu</h1>
-          <p className="text-xl">You Are Invited!</p>
-          <br /> <br /> <br />
-          <h2 className="text-2xl">The Wedding Celebration of</h2>
-          <h1 className="text-4xl font-bold my-3">Panji & Silvia</h1>
+        <div className="text-center max-w-md mx-auto">
+          {lirikLaguPujian.map(lirik => (
+            <div 
+              key={lirik.judul}
+              className=" bg-opacity-90 p-8 my-4 rounded-lg inline-block font-myFont">  
+              <p className="font-bold text-3xl text-white">{lirik.judul}</p>
+              <br /> <br />
+              <p className="font-bold text-xl text-white">{lirik.lirik}</p>
+            </div>
+          ))}
         </div>
         <button
-          className={`bg-[#20669B] text-white p-3 w-56 self-center mb-10 flex items-center justify-center btn-three: font-myFont ${
+          className={`bg-gray-900 border border-solid text-white p-3 mt-5 w-56 self-center mb-10 flex items-center justify-center btn-three:  ${
             isOpened
               ? 'transform scale-110 transition duration-300'
               : 'transition-none'
@@ -51,7 +64,7 @@ function OpeningButton({ onButtonClick }) {
           onClick={handleClick}
         >
           <IonIcon icon={mailOutline} className="mr-2" />
-          Buka Undangan
+          Scroll Kebawah
         </button>
       </div>
 

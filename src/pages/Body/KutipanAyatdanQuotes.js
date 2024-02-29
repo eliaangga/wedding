@@ -1,43 +1,48 @@
 import React from 'react';
-
-import WdPage2 from '../../img/backgorund/WdPage2.png';
-
+import Kephalaman2 from '../../img/kephalaman2.png';
 
 function KutipanAyatdanQuotes() {
-  const ayatKitabSuci = [
+  const lirikLaguPujian = [
     {
-      ayat: 'Kejadian 2:24',
-      isi: 'Sebab itu laki-laki akan meninggalkan ayahnya dan ibunya dan bersatu dengan istrinya, sehingga keduanya itu menjadi satu daging.'
-    },
-    {
-      ayat: 'Matius 19:6',
-      isi: 'Demikianlah mereka bukan lagi dua, melainkan satu. Karena itu, apa yang telah dipersatukan Allah, tidak boleh diceraikan manusia.'
-    },
+      judul: "Mari Nyanyikan 'Jiwaku Terbuka'",
+      lirik: `Jiwaku terbuka
+      Untuk-Mu, Tuhan
+      S'lidiki, nyatakan
+      S'gala perkara
+
+      Singkapkan semua
+      Yang terselubung
+      Supaya 'ku layak
+      Di hadapan-Mu, Tuhan
+
+      Supaya 'ku layak
+      Di hadapan-Mu, Tuhan`
+    }
   ];
 
   return (
     <div 
       className="flex items-center justify-center h-screen"
       style={{
-        backgroundImage: `url(${WdPage2})`,
-        backgroundSize: 'cover' 
+        backgroundImage: `url(${Kephalaman2})`,
+        backgroundSize: 'cover', // Mengatur backgroundSize ke 'contain'
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat',
       }}
     >
-      <div className="text-center">
-        
-        {ayatKitabSuci.map(ayat => (
+      <div className="text-center max-w-md mx-auto">
+        {lirikLaguPujian.map(lirik => (
           <div 
-            key={ayat.ayat}
+            key={lirik.judul}
             className=" bg-opacity-90 p-8 my-4 rounded-lg inline-block font-myFont">  
-            <p className="font-bold text-3xl">{ayat.ayat}</p>
-            <p className="font-bold text-xl">{ayat.isi}</p>
+            <p className="font-bold text-3xl text-white">{lirik.judul}</p>
+            <br /> <br />
+            <p className="font-bold text-xl text-white">{lirik.lirik}</p>
           </div>
         ))}
-        
       </div>
     </div>
   );
-
 }
 
 export default KutipanAyatdanQuotes;

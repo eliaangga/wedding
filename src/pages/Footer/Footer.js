@@ -5,12 +5,12 @@ export default function Footer() {
 
         <div className="flex flex-col md:flex-row text-center md:text-left">
           <div className="px-3">
-            <h5 className="font-bold">Made With By</h5>
+            <h5 className="font-bold">Made By</h5>
             <a className="text-gray-400 hover:text-white">@eliaanggaa</a>
           </div>
           <div className="px-3">
-            <h5 className="font-bold">Backsound By</h5>
-            <a className="text-gray-400 hover:text-white">Budi Doremi - Melukis Senja</a>
+            <h5 href="" target="_blank" className="font-bold">Backsound By</h5>
+            <a href="" className="text-gray-400 hover:text-white">Jiwaku Terbuka Untukmu Tuhan cover by Tiffany Justin & Dewangga Elsandro</a>
           </div>
         </div>
 

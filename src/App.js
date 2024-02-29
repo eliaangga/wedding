@@ -3,9 +3,10 @@ import './style.css';
 import ReactPlayer from 'react-player';
 import OpeningButton from "./pages/OpeningAwal/OpeningButton";  
 
+import Navbar from './pages/Navbar/navbar';
 import KutipanAyatdanQuotes from './pages/Body/KutipanAyatdanQuotes';  
 import Mempelai from './pages/Body/Mempelai';  
-import HighlightFoto from './pages/Body/HighlightFoto';  
+import Kepinformasi from './pages/Body/Kepinformasi';  
 import AkadResepsi from './pages/Body/AkadResepsi';
 import UcapandanDoa from './pages/Body/UcapandanDoa';
 import Transfer from './pages/Body/Transfer';
@@ -29,7 +30,7 @@ function App() {
   return (
     <div className="overflow-x-auto">
       <ReactPlayer
-        url="/melukis-senja.mp3"
+        url="/jiwakuterbuka.mp3"
         playing={isPlaying}
         controls={false}
         width="0"
@@ -37,11 +38,12 @@ function App() {
         style={{ display: 'none' }}
       />
 
+      <Navbar />
       <OpeningButton onButtonClick={handleOpeningButtonClick} />
 
       <KutipanAyatdanQuotes />
-      <Mempelai />
-      <HighlightFoto />   
+      <Kepinformasi />
+      <Mempelai />   
       <AkadResepsi />
       <RSVP />
       <Transfer />
