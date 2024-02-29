@@ -21,7 +21,7 @@ function Kepinformasi() {
     }}>
       <div className="bg-gray-900 bg-opacity-80 text-white p-4 md:p-8 mt-4 rounded-lg max-w-lg text-center shadow-lg mb-4 hover:bg-gray-900 transform transition-transform duration-500 hover:scale-105">
         <h1 className="text-xl md:text-4xl font-bold mb-4 md:mb-6">Informasi Kursus Evangelisasi</h1>
-        <p className="text-xs md:text-lg">Paroki Santo Mikael Cilegon, Angkatan II, Umum & OMK</p>
+        <p className="text-xs md:text-lg">Paroki Santo Mikael Cilegon, Angkatan III, Umum & OMK</p>
         <p className="italic text-xs md:text-lg mt-2">Tema: Mari Bersyukur dan Hidup Sebagai Saksi Tuhan</p>
         <div className="mt-4 md:mt-6">
           <h2 className="text-lg md:text-2xl font-bold mb-2">Jadwal Kegiatan:</h2>
