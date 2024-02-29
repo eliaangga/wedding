@@ -25,7 +25,7 @@ function UcapandanDoa() {
         {lirikLaguPujian.map(lirik => (
           <div 
             key={lirik.judul}
-            className=" bg-opacity-90 p-8 my-4 rounded-lg inline-block font-myFont">  
+            className=" bg-opacity-90 p-8 my-4 rounded-lg inline-block">  
             <p className="font-bold text-3xl text-white">{lirik.judul}</p>
             <br /> <br />
             <p className="font-bold text-xl text-white">{lirik.lirik}</p>

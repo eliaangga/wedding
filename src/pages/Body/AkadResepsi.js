@@ -56,7 +56,7 @@ function AkadResepsi() {
       backgroundSize: 'cover',
       backgroundPosition: 'center',
     }}>
-      <div className="p-4 md:p-8 rounded-lg max-w-3xl mx-auto border border-solid border-gray-500 mt-4  md:mt-8 md:mb-8 font-myFont bg-gray-900 bg-opacity-70 ">
+      <div className="p-4 md:p-8 rounded-lg max-w-3xl mx-auto border border-solid border-gray-500 mt-4  md:mt-8 md:mb-8 bg-gray-900 bg-opacity-70 ">
         <div className="flex items-center justify-between mb-4 md:mb-8">
           <div className="flex items-center">
           <img src={Logoparoki} alt="Logo Paroki" className="h-12 mr-5" /> 
@@ -94,7 +94,7 @@ function AkadResepsi() {
 
         <div className="bg-white-500 text-white rounded-lg p-4 mb-8 shadow border border-solid border-gray-500 hover:bg-black hover:text-white transform transition-transform duration-500 hover:scale-105">
           <h3 className="text-xl font-medium capitalize mb-4">Misa Pembukaan - Pengajaran</h3>
-          <div className="font-myFont text-xl md:text-4xl flex gap-4">
+          <div className="text-xl md:text-4xl flex gap-4">
             <div>{countdown.days} Days </div>
             <div>:</div> 
             <div>{countdown.hours} Hours </div>

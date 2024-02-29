@@ -14,7 +14,7 @@ function Mempelai() {
         <br className="my-5"/>
           
         <div className="flex flex-col md:flex-row items-center justify-center md:justify-between">
-          <div className="w-full md:w-1/2 text-center md:text-left font-myFont text-white  md:mt-0">
+          <div className="w-full md:w-1/2 text-center md:text-left text-white  md:mt-0">
             <h2 className="text-3xl font-semibold mb-4">mgr. Paskalis Bruno Syukur OFM</h2>
             <div className="flex items-center justify-center md:justify-start">
               <img
@@ -29,7 +29,7 @@ function Mempelai() {
             </div>
           </div>
           
-          <div className="w-full md:w-1/2 text-center md:text-left font-myFont text-white mt-20 md:mt-0">
+          <div className="w-full md:w-1/2 text-center md:text-left text-white mt-20 md:mt-0">
             <h2 className="text-3xl font-semibold mb-4">RD. Thomas Vilkanova Saidi</h2>
             <div className="flex items-center justify-center md:justify-start">
               <img
