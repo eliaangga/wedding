@@ -44,7 +44,7 @@ function Navbar() {
                   <p>Tema: Mari Bersyukur dan Hidup Sebagai Saksi Tuhan</p>
                   <h2 className="text-lg font-semibold mt-4">Jadwal Kegiatan:</h2>
                   <p>Misa Pembukaan: 30 Juni 2024 (17:30)</p>
-                  <p>Pengajaran: 30 Juni - 3 November 2024</p>
+                  <p>Pengajaran: 30 Juni - 30 Oktober 2024</p>
                   <p>Retret: Januari 2025</p>
                   <div className="mt-4">
                     <p>Pengajaran (Offline)</p>
