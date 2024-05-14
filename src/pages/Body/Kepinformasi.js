@@ -26,16 +26,18 @@ function Kepinformasi() {
         <div className="mt-4 md:mt-6">
           <h2 className="text-lg md:text-2xl font-bold mb-2">Jadwal Kegiatan:</h2>
           <ul className="text-xs md:text-lg">
-            <li>Misa Pembukaan: 19 Mei 2024 (18:00)</li>
-            <li>Pengajaran: 19 Mei - 18 Sept 2024</li>
-            <li>Retret: 29 Nov - 01 Des 2024</li>
+            <li>Misa Pembukaan: 30 Juni 2024 (17:30)</li>
+            <li>Pengajaran: 30 Juni - 30 Oktober 2024</li>
+            <li>Retret: Januari 2025</li>
           </ul>
         </div>
         <div className="mt-4 md:mt-6">
-          <p className="text-xs md:text-lg">Pengajaran (offline)</p>
-          <p className="text-xs md:text-lg">Rabu: 19:00-21:30</p>
-          <p className="text-xs md:text-lg">Minggu: 19:30-21:30</p>
-          <p className="text-xs md:text-lg">Ruangan Filipus PSMC</p>
+          <h2 className="text-lg md:text-2xl font-bold mb-2">Pengajaran (Offline)</h2>
+          <ul className="text-xs md:text-lg">
+            <li>Rabu: 19:00-21:30</li>
+            <li>Minggu: 19:30-21:30</li>
+            <li>Ruangan Filipus PSMC</li>
+          </ul>
         </div>
       </div>
       

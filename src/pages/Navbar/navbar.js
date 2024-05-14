@@ -6,7 +6,6 @@ import Qris from '../../img/qris.png';
 function Navbar() {
   const [isJadwalModalOpen, setIsJadwalModalOpen] = useState(false);
   const [isPendaftaranModalOpen, setIsPendaftaranModalOpen] = useState(false);
-  const [isOpen, setIsOpen] = useState(false);
 
   const toggleJadwalModal = () => {
     setIsJadwalModalOpen(!isJadwalModalOpen);
@@ -44,11 +43,11 @@ function Navbar() {
                   <p>Umum & OMK</p>
                   <p>Tema: Mari Bersyukur dan Hidup Sebagai Saksi Tuhan</p>
                   <h2 className="text-lg font-semibold mt-4">Jadwal Kegiatan:</h2>
-                  <p>Misa Pembukaan: 19 Mei 2024 (18:00)</p>
-                  <p>Pengajaran: 19 Mei - 18 Sept 2024</p>
-                  <p>Retret: 29 Nov - 01 Des 2024</p>
+                  <p>Misa Pembukaan: 30 Juni 2024 (17:30)</p>
+                  <p>Pengajaran: 30 Juni - 3 November 2024</p>
+                  <p>Retret: Januari 2025</p>
                   <div className="mt-4">
-                    <p>Pengajaran (offline)</p>
+                    <p>Pengajaran (Offline)</p>
                     <p>Rabu: 19:00-21:30</p>
                     <p>Minggu: 19:30-21:30</p>
                     <p>Ruangan Filipus PSMC</p>

@@ -7,7 +7,7 @@ import { locationOutline } from 'ionicons/icons';
 
 function AkadResepsi() {
 
-  const targetDate = new Date('2024-05-19T00:00:00').getTime();
+  const targetDate = new Date('2024-06-30T00:00:00').getTime();
 
   const [countdown, setCountdown] = useState({
     days: 0, 
@@ -70,12 +70,12 @@ function AkadResepsi() {
 
         <div className="bg-white-500 text-white rounded-lg p-4 mb-8 shadow border border-solid border-gray-500 hover:bg-black hover:text-white transform transition-transform duration-500 hover:scale-105">
           <h2 className="text-2xl capitalize mb-2">Misa Pembukaan</h2>
-          <p className=" text-xl font-medium mb-1 ">Tanggal 19 Mei 2024</p>
+          <p className=" text-xl font-medium mb-1 ">Tanggal 30 Juni 2024</p>
         </div>
 
         <div className="bg-white-500 text-white rounded-lg p-4 mb-8 shadow border border-solid border-gray-500 hover:bg-black hover:text-white transform transition-transform duration-500 hover:scale-105">
           <h2 className="text-2xl capitalize mb-2">Pengajaran</h2>
-          <p className=" text-xl font-medium mb-1 ">Tanggal 19 Mei – 18  September 2024
+          <p className=" text-xl font-medium mb-1 ">Tanggal 30 Juni - 30 Oktober 2024
 </p>
         </div>
 
